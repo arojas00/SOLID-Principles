@@ -52,7 +52,7 @@
         public string Name { get; set; }
         public int Matches { get; set; }
         public int Goals { get; set; }
-        public string Achievement => "Goal per match ratio: " + (double)Matches / Goals;
+        public string Achievement => "Goal per match ratio: " + (double)Goals / Matches;
     }
 
     public class Winger : Striker, IPlayer, IOffensive
